@@ -208,7 +208,7 @@ api.hookEvent('bot', 'privmsg', function (message) {
 
 api.hookEvent('bot', 'privmsg', function (message) {
     if (message.nickname === config.idlerpg.nickname && message.target === config.idlerpg.channel) {
-        if (wildcard(message.message, config.bot.nick)) {
+        if (wildcard(message.message, '*' + config.bot.nick + '*')) {
             clearInterval(Updatetimer);
             Updatetimer = setInterval(function () {
                 client.irc.privmsg(config.idlerpg.nickname, 'rawstats2');
