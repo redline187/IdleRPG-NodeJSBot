@@ -1,6 +1,6 @@
 {
   "name": "idlerpg-nodejsbot",
-  "version": "0.1.0",
+  "version": "1.0.0b",
   "description": "IdleRPG NodeJS Bot",
   "main": "bot.js",
   "scripts": {
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/redline187/IdleRPG-NodeJSBot#readme",
   "dependencies": {
-    "irc-factory": "^1.10.1"
+    "download-file": "^0.1.5",
+    "irc-factory": "^1.10.1",
+    "node-wildcard": "0.0.9"
   }
 }
