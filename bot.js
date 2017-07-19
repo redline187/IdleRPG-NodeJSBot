@@ -177,7 +177,7 @@ api.hookEvent('bot', 'privmsg', function (message) {
                 clearInterval(Fighttimer);
                 Fighttimer = setInterval(function () {
                     adminbot.irc.privmsg(config.admin.channel, 'Sending Fight');
-                    bestfight(level);
+                    bestfight(level,team);
                     clearInterval(Fighttimer);
                 }, 35000);
 
@@ -269,7 +269,7 @@ api.hookEvent('bot', 'privmsg', function (message) {
     }
 });
 
-function bestfight(level) {
+function bestfight(level,team) {
     var LineReader = require('linereader');
     var myArray;
     var odds = 999999;
@@ -288,7 +288,7 @@ function bestfight(level) {
         var myRe = /^(rank \d+ char ([^\x20]+) network ([^\x20]+) userhost ([^\x20]+) level (\d+) created \d+ lastlogin \d+ online (.) sex \S+ class \{[^\}]+\} team (\d+) ttl \d+ regentm \d+ challengetm \d+ slaytm \d+ idled \d+ x_pos \d+ y_pos \d+ sum (\d+) amulet \S+ charm \S+ helm \S+ boots \S+ gloves \S+ ring \S+ leggings \S+ shield \S+ tunic \S+ weapon \S+ align (.) alignchanged . powerpots \d+ luckpots \d+ fights \d+ bets \d+ bwon \d+ blost \d+ badd \d+ bminus \d+ hero (.) hlevel (\d+))/;
         myArray = myRe.exec(line);
         var realsum;
-        if (Number(myArray[6]) == 1 && Number(myArray[7]) != 256 && level <= Number(myArray[5]) && myArray[2] != config.bot.nick) {
+        if (Number(myArray[6]) == 1 && Number(myArray[7]) != team && level <= Number(myArray[5]) && myArray[2] != config.bot.nick) {
             if (myArray[9] === 'e') {
                 var c = 0.1 * Number(myArray[8]);
                 realsum = Number(myArray[8]) - c;
@@ -312,11 +312,6 @@ function bestfight(level) {
         console.log("End");
         client.irc.privmsg(config.idlerpg.nickname, 'align priest');
         client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
-        client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
-        client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
-        client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
-        client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
-        client.irc.privmsg(config.idlerpg.nickname, 'align undead');
     });
 
 };
