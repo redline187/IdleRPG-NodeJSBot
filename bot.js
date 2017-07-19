@@ -316,6 +316,11 @@ function bestfight(level, team) {
         console.log("End");
         client.irc.privmsg(config.idlerpg.nickname, 'align priest');
         client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
+        client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
+        client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
+        client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
+        client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
+        client.irc.privmsg(config.idlerpg.nickname, 'align ' + config.bot.align);
     });
 
 };
