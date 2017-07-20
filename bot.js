@@ -173,7 +173,7 @@ api.hookEvent('bot', 'privmsg', function (message) {
                 }, challengettl * 1000);
             }
 
-            if (level >= 10 && fights === 0 && attackttl > 10 && gold === 40) {
+            if (level >= 10 && fights === 0 && attackttl > 10 && gold === 40 && bank >= 120) {
                 clearInterval(Fighttimer);
                 Fighttimer = setInterval(function () {
                     adminbot.irc.privmsg(config.admin.channel, 'Sending Fight');
@@ -315,10 +315,6 @@ function bestfight(level, team) {
     lr.on('end', function () {
         console.log("End");
         client.irc.privmsg(config.idlerpg.nickname, 'align priest');
-        client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
-        client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
-        client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
-        client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
         client.irc.privmsg(config.idlerpg.nickname, 'fight ' + victim);
         client.irc.privmsg(config.idlerpg.nickname, 'align ' + config.bot.align);
     });
