@@ -1,5 +1,5 @@
 # IdleRPG-NodeJSBot
-IdleRPG NodeJS Bot
+MultiRPG NodeJS Bot
 
 Install guide
 
@@ -11,7 +11,7 @@ install git everything default - https://git-scm.com/
 open up command prompt 
 type
 
-git clone https://github.com/redline187/idlerpg-nodejsbot.git
+git clone https://github.com/redline187/multirpg-nodejsbot.git
 
 npm install 
 
@@ -29,7 +29,7 @@ Linux:
 
 install nodejs
 install git
-git clone https://github.com/redline187/idlerpg-nodejsbot.git
+git clone https://github.com/redline187/multirpg-nodejsbot.git
 
 npm install 
 

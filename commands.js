@@ -1,3 +1,5 @@
+/*jslint node: true */
+
 var Creeps = function (level, sum) {
     if (!level || level < 10) {
         return;
@@ -55,16 +57,6 @@ var Creeps = function (level, sum) {
     }
 };
 
-/*alias -l mRPG:Monsters {
-  if (6000 <= $1) { return Hippogriff }
-  if (5000 <= $1) { return Sphinx }
-  if (4500 <= $1) { return Dragon }
-  if (4000 <= $1) { return Vampire }
-  if (3500 <= $1) { return Mammoth }
-  if (3000 <= $1) { return Centaur }
-  return Medusa
-}
-*/
 var Monsters = function (sum) {
     if (6000 <= sum) {
         return 'Hippogriff';
