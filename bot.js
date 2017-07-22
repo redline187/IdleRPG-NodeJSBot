@@ -137,8 +137,8 @@ api.hookEvent('bot', 'privmsg', function (message) {
             if (gold < 40 && bank > 20) {
                 client.irc.privmsg(config.idlerpg.nickname, 'bank withdraw 20');
             }
-            if (hlevel === 9 && bank >= 220 && bets === 5) {
-                client.irc.privmsg(config.idlerpg.nickname, 'bank withdraw 100');
+            if (hlevel === 9 && bank >= 420 && bets === 5) {
+                client.irc.privmsg(config.idlerpg.nickname, 'bank withdraw 200');
                 client.irc.privmsg(config.idlerpg.nickname, 'upgrade all 1');
             }
             if (level >= 10) {
