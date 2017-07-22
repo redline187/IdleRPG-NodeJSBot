@@ -139,7 +139,7 @@ api.hookEvent('bot', 'privmsg', function (message) {
             }
             if (hlevel === 9 && bank >= 220 && bets === 5) {
                 client.irc.privmsg(config.idlerpg.nickname, 'bank withdraw 100');
-                client.irc.privmsg(config.idlerpg.nickname, 'upgrade all 5');
+                client.irc.privmsg(config.idlerpg.nickname, 'upgrade all 1');
             }
             if (level >= 10) {
                 clearInterval(Attacktimer);
