@@ -35,7 +35,7 @@ var Creeps = function (level, sum) {
         return "Troll";
     }
     if (level < 91) {
-        return "Cyclop";
+        return "Cyclops";
     }
     if (level < 101) {
         return "Mutant";

@@ -1,24 +1,24 @@
 {
-  "name": "idlerpg-nodejsbot",
-  "version": "1.0.0b",
-  "description": "IdleRPG NodeJS Bot",
-  "main": "bot.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/redline187/IdleRPG-NodeJSBot.git"
-  },
-  "author": "redline",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/redline187/IdleRPG-NodeJSBot/issues"
-  },
-  "homepage": "https://github.com/redline187/IdleRPG-NodeJSBot#readme",
-  "dependencies": {
-    "download-file": "^0.1.5",
-    "irc-factory": "^1.10.1",
-    "node-wildcard": "0.0.9"
-  }
+    "name": "idlerpg-nodejsbot",
+    "version": "1.0.0b",
+    "description": "IdleRPG NodeJS Bot",
+    "main": "bot.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/redline187/IdleRPG-NodeJSBot.git"
+    },
+    "author": "redline",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/redline187/IdleRPG-NodeJSBot/issues"
+    },
+    "homepage": "https://github.com/redline187/IdleRPG-NodeJSBot#readme",
+    "dependencies": {
+        "download-file": "^0.1.5",
+        "irc-factory": "^1.10.1",
+        "node-wildcard": "0.0.9"
+    }
 }
